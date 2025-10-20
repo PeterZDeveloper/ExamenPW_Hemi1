@@ -17,14 +17,10 @@ interface Vehiculo {
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-
-
-
-
 export class App {
   protected readonly title = signal('ecotrack');
 
- vehiculos: Vehiculo[] = [];
+  vehiculos: Vehiculo[] = [];
   vehiculoForm: FormGroup;
   editarModo = false;
   editarIndex: number | null = null;
