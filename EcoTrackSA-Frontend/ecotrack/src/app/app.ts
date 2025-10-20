@@ -1,12 +1,5 @@
 import { Component, signal } from '@angular/core';
-
-
-@Component({
-  selector: 'app-root',
-  imports: [FormGroup,FormController],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
-})
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 
 interface Vehiculo {
@@ -16,6 +9,16 @@ interface Vehiculo {
   anio: number;
   estado: 'activo' | 'inactivo';
 }
+
+@Component({
+  selector: 'app-root',
+  imports: [FormGroup,FormControl],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
+
+
+
 
 export class App {
   protected readonly title = signal('ecotrack');
