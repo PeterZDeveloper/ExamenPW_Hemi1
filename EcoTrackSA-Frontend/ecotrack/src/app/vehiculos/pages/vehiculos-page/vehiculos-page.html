@@ -1,0 +1,22 @@
+<h2>Vehículos</h2>
+
+<app-vehiculo-form
+  [editing]="selected"
+  (save)="onSave($event)"
+  (cancel)="onCancel()">
+</app-vehiculo-form>
+
+<hr/>
+
+<ng-container *ngIf="(vehiculos$ | async) as vehiculos; else loadingTpl">
+  <app-vehiculo-list
+    [vehiculos]="vehiculos"
+    [loading]="(loading$ | async) ?? false"
+    (edit)="onEdit($event)"
+    (remove)="onRemove($event)">
+  </app-vehiculo-list>
+</ng-container>
+
+<ng-template #loadingTpl>
+  <div>Cargando...</div>
+</ng-template>
