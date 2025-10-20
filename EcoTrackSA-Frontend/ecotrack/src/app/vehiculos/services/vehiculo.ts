@@ -4,7 +4,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { Vehiculo } from '../models/vehiculo.model';
 
-const API_BASE = 'https://api.ecotrack.com';
+// Local backend during development
+const API_BASE = 'http://localhost:3001';
 const BASE_URL = `${API_BASE}/vehiculos`;
 
 @Injectable({
