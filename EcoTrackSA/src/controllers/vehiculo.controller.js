@@ -1,4 +1,4 @@
-const service = require('../models/vehiculo.model');
+const service = require('../services/vehiculo.service');
 
 // GET: Obtener todos los vehículos
 exports.getVehiculos = async (req, res) => {
