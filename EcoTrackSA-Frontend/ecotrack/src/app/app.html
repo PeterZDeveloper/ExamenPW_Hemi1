@@ -10,14 +10,14 @@
           <div class="col">
             <label for="nombre" class="form-label">Nombre</label>
             <input type="text" id="nombre" class="form-control" formControlName="nombre" />
-            <div *ngIf="vehiculoForm.get('nombre').touched && vehiculoForm.get('nombre').invalid" class="text-danger small">
+            <div *ngIf="vehiculoForm.get('nombre')?.touched && vehiculoForm.get('nombre')?.invalid" class="text-danger small">
               El nombre es obligatorio.
             </div>
           </div>
           <div class="col">
             <label for="marca" class="form-label">Marca</label>
             <input type="text" id="marca" class="form-control" formControlName="marca" />
-            <div *ngIf="vehiculoForm.get('marca').touched && vehiculoForm.get('marca').invalid" class="text-danger small">
+            <div *ngIf="vehiculoForm.get('marca')?.touched && vehiculoForm.get('marca')?.invalid" class="text-danger small">
               La marca debe tener al menos 3 caracteres.
             </div>
           </div>
@@ -26,7 +26,7 @@
           <div class="col">
             <label for="anio" class="form-label">Año</label>
             <input type="number" id="anio" class="form-control" formControlName="anio" />
-            <div *ngIf="vehiculoForm.get('anio').touched && vehiculoForm.get('anio').invalid" class="text-danger small">
+            <div *ngIf="vehiculoForm.get('anio')?.touched && vehiculoForm.get('anio')?.invalid" class="text-danger small">
               El año debe estar entre 2015 y 2025.
             </div>
           </div>
@@ -37,7 +37,7 @@
               <option value="activo">Activo</option>
               <option value="inactivo">Inactivo</option>
             </select>
-            <div *ngIf="vehiculoForm.get('estado').touched && vehiculoForm.get('estado').invalid" class="text-danger small">
+            <div *ngIf="vehiculoForm.get('estado')?.touched && vehiculoForm.get('estado')?.invalid" class="text-danger small">
               Debe seleccionar un estado válido.
             </div>
           </div>
