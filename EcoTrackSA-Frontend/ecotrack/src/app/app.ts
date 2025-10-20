@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-
+import { CommonModule } from '@angular/common';
 
 interface Vehiculo {
   id?: number;
