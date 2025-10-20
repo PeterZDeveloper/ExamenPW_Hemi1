@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://api.ecotrack.com' // cámbialo si usas otra URL/local
+  apiBaseUrl: 'http://localhost:3000' // cámbialo si usas otra URL/local
 };

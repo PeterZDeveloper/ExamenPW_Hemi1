@@ -5,7 +5,7 @@ import { tap } from 'rxjs/operators';
 import { Vehiculo } from '../models/vehiculo.model';
 
 // Local backend during development
-const API_BASE = 'http://localhost:3001';
+const API_BASE = 'http://localhost:3000';
 const BASE_URL = `${API_BASE}/vehiculos`;
 
 @Injectable({
