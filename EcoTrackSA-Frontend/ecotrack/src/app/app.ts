@@ -12,7 +12,7 @@ interface Vehiculo {
 
 @Component({
   selector: 'app-root',
-  imports: [FormGroup,FormControl],
+  imports: [],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
