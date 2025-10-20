@@ -1,16 +1,9 @@
 const service = require('../models/vehiculo.model');
 
 // GET: Obtener todos los vehículos
-exports.getVehiculos = async (req, res) => {
-    try {
-        const data = await service.getVehiculos();
-        res.json(data);
-        console.log('getVehiculos controller');
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-        console.log(error);
-    }
-};
+exports.getAllVehiculos = async (req, res) => {
+    return await model.findAll();
+}
 
 // POST: Crear un nuevo vehículo
 exports.createVehiculo = async (req, res) => {
