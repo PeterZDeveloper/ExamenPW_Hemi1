@@ -1,11 +1,11 @@
 const service = require('../services/vehiculo.service');
 
 // GET: Obtener todos los vehículos
-exports.getVehiculos = async (req, res) => {
+exports.getAllVehiculos = async (req, res) => {
     try {
-        const data = await service.getVehiculos();
+        const data = await service.getAllVehiculos();
         res.json(data);
-        console.log('getVehiculos controller');
+        console.log('controller');
     } catch (error) {
         res.status(500).json({ error: error.message });
         console.log(error);
